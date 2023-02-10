@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>37signals &mdash; 00. Start Here</title>
+
+    <meta charset="utf-8" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta
+      name="description"
+      content="Welcome. This site is a catalog of ideas — signals — that drive us. We’re best known for making Basecamp and HEY, writing business and software books (Getting Real, REWORK, REMOTE, It Doesn’t Have to Be Crazy at Work, and Shape Up), and inventing the Ruby on Rails framework. Click the dot at bottom right to advance, or wander through the numbered list ad hoc. Have fun."
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:site_name" content="37signals" />
+    <meta property="og:title" content="00. Start Here" />
+    <meta
+      property="og:description"
+      content="Welcome. This site is a catalog of ideas — signals — that drive us. We’re best known for making Basecamp and HEY, writing business and software books (Getting Real, REWORK, REMOTE, It Doesn’t Have to Be Crazy at Work, and Shape Up), and inventing the Ruby on Rails framework. Click the dot at bottom right to advance, or wander through the numbered list ad hoc. Have fun."
+    />
+    <meta
+      property="og:image"
+      content="https://37signals.com/assets/images/signals/37s-000.png"
+    />
+    <meta property="og:url" content="https://37signals.com/00/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:title" content="00. Start Here" />
+    <meta
+      name="twitter:description"
+      content="Welcome. This site is a catalog of ideas — signals — that drive us. We’re best known for making Basecamp and HEY, writing business and software books (Getting Real, REWORK, REMOTE, It Doesn’t Have to Be Crazy at Work, and Shape Up), and inventing the Ruby on Rails framework. Click the dot at bottom right to advance, or wander through the numbered list ad hoc. Have fun."
+    />
+    <meta
+      name="twitter:image"
+      content="https://37signals.com/assets/images/signals/37s-000.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@37signals" />
+    <meta name="twitter:site" content="@37signals" />
+    <meta name="twitter:image:alt" content="37signals" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "37signals",
+        "description": "A catalog of ideas — signals — that drive us.",
+        "url": "https://37signals.com",
+        "image": "https://37signals.com/assets/images/opengraph.png"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "37signals",
+        "url": "https://37signals.com"
+      }
+    </script>
+
+    <link rel="canonical" href="https://37signals.com/00/" />
+    <link rel="icon" href="/assets/images/favicon.svg" />
+    <link rel="mask-icon" href="/assets/images/mask-icon.svg" color="#000000" />
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="37signals Jobs Feed"
+      href="https://37signals.com/feed/jobs.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="37signals Long Thoughts Feed"
+      href="https://37signals.com/feed/thoughts.xml"
+    />
+
+    <link rel="prefetch" href="/37" as="document" />
+    <link rel="prefetch" href="/01/" as="document" />
+
+    <script defer src="/assets/js/script.js" type="module"></script>
+    <script
+      defer
+      data-domain="37signals.com"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+  </head>
+
+  <body data-signal="0">
+    <input class="nav-active" id="nav-active" type="checkbox" />
+
+    <label class="nav-underlay" for="nav-active"></label>
+
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="/" aria-label="37signals">
+          <svg
+            height="300"
+            viewBox="0 0 1063 300"
+            width="1063"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m883.34 287.739c-16.22-16.182-15.899-42.849 0-59.234 13.485-13.494 13.487-35.324 0-48.795-13.39-13.374-35.24-13.107-48.803 0-16.324 16.326-42.901 16.327-59.248 0-16.221-16.202-15.897-42.999.001-59.39 13.351-13.353 13.086-35.2951 0-48.8134-16.384-16.3668-16.385-42.857 0-59.2251 16.343-16.37627 42.926-16.37627 59.254.0056 16.225 16.1984 15.901 42.826-.008 59.2195-13.466 13.4839-13.466 35.3224.005 48.8134 13.395 13.361 35.245 13.098 48.799 0 16.344-16.347 43.025-16.351 59.352 0 16.248 16.186 15.929 42.988 0 59.39-13.465 13.467-13.472 35.303 0 48.801 16.412 16.341 16.42 42.885 0 59.234-16.32 16.341-43.005 16.341-59.352-.006zm59.345-275.4213c16.42 16.4115 16.42 42.9753.002 59.385-16.382 16.3955-42.991 16.3955-59.345.0052-16.454-16.402-16.445-42.9806 0-59.3841 16.362-16.43073 42.965-16.43072 59.343-.0061zm108.005 108.0003c16.41 16.411 16.41 42.98 0 59.39-16.38 16.395-42.99 16.39-59.348 0-16.454-16.402-16.445-42.981 0-59.384 16.358-16.431 42.968-16.431 59.348-.006zm-964.2515-30.3219v18.5909l-33.1261 28.732c21.4644.507 37.5204 13.69 37.5204 35.661 0 19.437-15.042 39.887-44.4499 39.887-15.887 0-28.9008-4.056-45.6329-15.549l10.9857-16.056c13.5209 8.451 22.8165 12.169 33.9712 12.169 14.0279 0 22.3094-8.113 22.3094-20.282 0-12.337-9.4646-19.267-23.4925-19.267-7.4365 0-11.8307 1.352-14.1969 2.197l-9.9716-13.69 38.7035-33.464h-52.0554v-18.9289zm13.1079 18.9289h61.3506c-20.281 27.042-39.548 65.07-44.45 101.069h25.521c5.577-38.704 24.507-77.576 45.126-102.928v-17.0699h-87.5476zm85.3986 38.873c0-14.704 12.845-27.042 36-27.042 14.535 0 25.013 3.38 37.182 13.521l-11.831 14.366c-10.478-8.113-17.07-10.141-25.858-10.141-8.789 0-14.535 3.549-14.535 8.62 0 5.37 5.171 6.51 18.531 9.454.515.113 1.042.229 1.581.348 23.662 5.24 33.464 11.493 33.464 27.549 0 16.563-13.521 28.225-37.013 28.225-15.887 0-27.718-3.887-41.746-16.394l12.676-14.197c12.676 10.31 19.436 12.845 29.577 12.845 8.619 0 15.042-3.211 15.042-9.127 0-6.564-7.661-8.214-18.572-10.564-.887-.191-1.796-.387-2.723-.59-24.338-5.409-31.775-11.493-31.775-26.873zm111.642-47.323c0 7.098-5.747 12.845-13.014 12.845-7.268 0-13.014-5.747-13.014-12.845 0-7.0986 5.746-12.845 13.014-12.845 7.267 0 13.014 5.7464 13.014 12.845zm-24 109.519v-86.365h21.971v86.365zm100.148-76.731c-5.239-7.775-13.689-12.507-26.365-12.507-21.803 0-38.028 17.746-38.028 43.605 0 26.028 16.225 43.605 38.028 43.605 11.661 0 19.774-4.226 25.182-10.986v6.929c0 15.211-9.295 20.958-21.126 20.958-9.972 0-17.915-3.042-30.084-10.31l-10.648 15.887c14.028 9.127 27.38 12.676 41.07 12.676 23.831 0 42.253-12.676 42.253-37.351v-82.14h-20.282zm-21.464 56.112c-12.507 0-20.788-10.141-20.788-25.014s8.281-24.845 20.788-24.845c12.169 0 20.957 9.972 20.957 24.845s-8.788 25.014-20.957 25.014zm106.233-68.619c-11.831 0-20.619 4.901-26.028 12.676v-9.803h-20.45v86.365h21.971v-52.056c0-10.816 7.268-18.253 17.408-18.253 10.479 0 16.056 6.423 16.056 17.746v52.563h21.972v-59.154c0-17.577-10.817-30.084-30.929-30.084zm86.796 0c-17.07 0-29.577 6.592-40.393 19.436l13.859 12.676c8.957-8.619 15.042-14.028 26.872-14.028 9.972 0 16.225 4.733 16.225 13.183v2.028l-20.281 3.718c-19.605 3.55-37.351 10.479-37.351 30.422 0 17.578 14.535 24.676 30.929 24.676 13.352 0 22.647-4.563 27.887-11.831v8.958h19.774v-58.309c0-18.253-12.676-30.929-37.521-30.929zm-6.422 74.534c-8.282 0-13.183-3.211-13.183-8.62 0-8.112 8.62-11.154 21.633-13.859l14.535-3.042v5.071c0 15.042-11.83 20.45-22.985 20.45zm62.29-105.2939v119.9979h21.971v-119.9979zm37.445 57.8019c0-14.704 12.845-27.042 36-27.042 14.535 0 25.013 3.38 37.182 13.521l-11.831 14.366c-10.478-8.113-17.07-10.141-25.858-10.141-8.789 0-14.535 3.549-14.535 8.62 0 5.37 5.171 6.51 18.531 9.454.515.113 1.042.229 1.581.348 23.662 5.24 33.464 11.493 33.464 27.549 0 16.563-13.521 28.225-37.013 28.225-15.887 0-27.718-3.887-41.746-16.394l12.676-14.197c12.676 10.31 19.436 12.845 29.577 12.845 8.619 0 15.042-3.211 15.042-9.127 0-6.564-7.661-8.214-18.572-10.564-.887-.191-1.796-.387-2.723-.59-24.338-5.409-31.775-11.493-31.775-26.873z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="nav__toggle">
+        <label for="nav-active">
+          <span>Menu</span>
+        </label>
+      </div>
+      <div class="nav__options">
+        <ul>
+          <li class="selected"><a href="/" aria-label="Signals">Signals</a></li>
+
+          <li>
+            <a
+              href="https://basecamp.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Basecamp"
+              >Basecamp</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://www.hey.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="HEY"
+              >HEY</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://1999.37signals.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="1999"
+              >1999</a
+            >
+          </li>
+
+          <li><a href="/books/" aria-label="Books">Books</a></li>
+
+          <li><a href="/thoughts/" aria-label="Thoughts">Thoughts</a></li>
+
+          <li><a href="/jobs/" aria-label="Jobs">Jobs</a></li>
+
+          <li>
+            <a
+              href="https://updates.37signals.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Updates"
+              >Updates</a
+            >
+          </li>
+
+          <li><a href="/podcast/" aria-label="Podcast">Podcast</a></li>
+
+          <li>
+            <a href="https://supply.37signals.com" aria-label="Supply"
+              >Supply</a
+            >
+          </li>
+
+          <li><a href="https://dev.37signals.com" aria-label="Dev">Dev</a></li>
+
+          <li><a href="/policies/privacy/" aria-label="Privacy">Privacy</a></li>
+
+          <li><a href="/policies/terms/" aria-label="Terms">Terms</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1>
+        <a href="/" aria-label="37signals">
+          <svg
+            height="300"
+            viewBox="0 0 1063 300"
+            width="1063"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m883.34 287.739c-16.22-16.182-15.899-42.849 0-59.234 13.485-13.494 13.487-35.324 0-48.795-13.39-13.374-35.24-13.107-48.803 0-16.324 16.326-42.901 16.327-59.248 0-16.221-16.202-15.897-42.999.001-59.39 13.351-13.353 13.086-35.2951 0-48.8134-16.384-16.3668-16.385-42.857 0-59.2251 16.343-16.37627 42.926-16.37627 59.254.0056 16.225 16.1984 15.901 42.826-.008 59.2195-13.466 13.4839-13.466 35.3224.005 48.8134 13.395 13.361 35.245 13.098 48.799 0 16.344-16.347 43.025-16.351 59.352 0 16.248 16.186 15.929 42.988 0 59.39-13.465 13.467-13.472 35.303 0 48.801 16.412 16.341 16.42 42.885 0 59.234-16.32 16.341-43.005 16.341-59.352-.006zm59.345-275.4213c16.42 16.4115 16.42 42.9753.002 59.385-16.382 16.3955-42.991 16.3955-59.345.0052-16.454-16.402-16.445-42.9806 0-59.3841 16.362-16.43073 42.965-16.43072 59.343-.0061zm108.005 108.0003c16.41 16.411 16.41 42.98 0 59.39-16.38 16.395-42.99 16.39-59.348 0-16.454-16.402-16.445-42.981 0-59.384 16.358-16.431 42.968-16.431 59.348-.006zm-964.2515-30.3219v18.5909l-33.1261 28.732c21.4644.507 37.5204 13.69 37.5204 35.661 0 19.437-15.042 39.887-44.4499 39.887-15.887 0-28.9008-4.056-45.6329-15.549l10.9857-16.056c13.5209 8.451 22.8165 12.169 33.9712 12.169 14.0279 0 22.3094-8.113 22.3094-20.282 0-12.337-9.4646-19.267-23.4925-19.267-7.4365 0-11.8307 1.352-14.1969 2.197l-9.9716-13.69 38.7035-33.464h-52.0554v-18.9289zm13.1079 18.9289h61.3506c-20.281 27.042-39.548 65.07-44.45 101.069h25.521c5.577-38.704 24.507-77.576 45.126-102.928v-17.0699h-87.5476zm85.3986 38.873c0-14.704 12.845-27.042 36-27.042 14.535 0 25.013 3.38 37.182 13.521l-11.831 14.366c-10.478-8.113-17.07-10.141-25.858-10.141-8.789 0-14.535 3.549-14.535 8.62 0 5.37 5.171 6.51 18.531 9.454.515.113 1.042.229 1.581.348 23.662 5.24 33.464 11.493 33.464 27.549 0 16.563-13.521 28.225-37.013 28.225-15.887 0-27.718-3.887-41.746-16.394l12.676-14.197c12.676 10.31 19.436 12.845 29.577 12.845 8.619 0 15.042-3.211 15.042-9.127 0-6.564-7.661-8.214-18.572-10.564-.887-.191-1.796-.387-2.723-.59-24.338-5.409-31.775-11.493-31.775-26.873zm111.642-47.323c0 7.098-5.747 12.845-13.014 12.845-7.268 0-13.014-5.747-13.014-12.845 0-7.0986 5.746-12.845 13.014-12.845 7.267 0 13.014 5.7464 13.014 12.845zm-24 109.519v-86.365h21.971v86.365zm100.148-76.731c-5.239-7.775-13.689-12.507-26.365-12.507-21.803 0-38.028 17.746-38.028 43.605 0 26.028 16.225 43.605 38.028 43.605 11.661 0 19.774-4.226 25.182-10.986v6.929c0 15.211-9.295 20.958-21.126 20.958-9.972 0-17.915-3.042-30.084-10.31l-10.648 15.887c14.028 9.127 27.38 12.676 41.07 12.676 23.831 0 42.253-12.676 42.253-37.351v-82.14h-20.282zm-21.464 56.112c-12.507 0-20.788-10.141-20.788-25.014s8.281-24.845 20.788-24.845c12.169 0 20.957 9.972 20.957 24.845s-8.788 25.014-20.957 25.014zm106.233-68.619c-11.831 0-20.619 4.901-26.028 12.676v-9.803h-20.45v86.365h21.971v-52.056c0-10.816 7.268-18.253 17.408-18.253 10.479 0 16.056 6.423 16.056 17.746v52.563h21.972v-59.154c0-17.577-10.817-30.084-30.929-30.084zm86.796 0c-17.07 0-29.577 6.592-40.393 19.436l13.859 12.676c8.957-8.619 15.042-14.028 26.872-14.028 9.972 0 16.225 4.733 16.225 13.183v2.028l-20.281 3.718c-19.605 3.55-37.351 10.479-37.351 30.422 0 17.578 14.535 24.676 30.929 24.676 13.352 0 22.647-4.563 27.887-11.831v8.958h19.774v-58.309c0-18.253-12.676-30.929-37.521-30.929zm-6.422 74.534c-8.282 0-13.183-3.211-13.183-8.62 0-8.112 8.62-11.154 21.633-13.859l14.535-3.042v5.071c0 15.042-11.83 20.45-22.985 20.45zm62.29-105.2939v119.9979h21.971v-119.9979zm37.445 57.8019c0-14.704 12.845-27.042 36-27.042 14.535 0 25.013 3.38 37.182 13.521l-11.831 14.366c-10.478-8.113-17.07-10.141-25.858-10.141-8.789 0-14.535 3.549-14.535 8.62 0 5.37 5.171 6.51 18.531 9.454.515.113 1.042.229 1.581.348 23.662 5.24 33.464 11.493 33.464 27.549 0 16.563-13.521 28.225-37.013 28.225-15.887 0-27.718-3.887-41.746-16.394l12.676-14.197c12.676 10.31 19.436 12.845 29.577 12.845 8.619 0 15.042-3.211 15.042-9.127 0-6.564-7.661-8.214-18.572-10.564-.887-.191-1.796-.387-2.723-.59-24.338-5.409-31.775-11.493-31.775-26.873z"
+            />
+          </svg>
+        </a>
+      </h1>
+
+      <ul>
+        <li class="selected"><a href="/" aria-label="Signals">Signals</a></li>
+
+        <li>
+          <a
+            href="https://basecamp.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Basecamp"
+            >Basecamp</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="https://www.hey.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="HEY"
+            >HEY</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="cluster">
+        <section class="signal signal--select" id="signal-0">
+          <header class="signal__header" tabindex="-1" autofocus>
+            <h2 aria-label="Signal 00. Start Here">
+              <span>00.</span>
+              <strong>Start Here</strong>
+            </h2>
+          </header>
+          <div class="signal__content">
+            <p>
+              Welcome. This site is a catalog of my professional life — portfolio — that I
+              have built.
+              Click the dot at bottom right to advance, or wander through the
+              numbered list ad hoc. Have fun.
+            </p>
+          </div>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/01/"
+              data-signal="01"
+              aria-label="Signal 01. An obligation to independence"
+            >
+              <dl>
+                <dt>01.</dt>
+                <dd>An obligation to independence</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/02/"
+              data-signal="02"
+              aria-label="Signal 02. Work isn’t war"
+            >
+              <dl>
+                <dt>02.</dt>
+                <dd>Work isn’t war</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/03/" data-signal="03" aria-label="Signal 03. Small teams">
+              <dl>
+                <dt>03.</dt>
+                <dd>Small teams</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/04/"
+              data-signal="04"
+              aria-label="Signal 04. Profit motive"
+            >
+              <dl>
+                <dt>04.</dt>
+                <dd>Profit motive</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/05/"
+              data-signal="05"
+              aria-label="Signal 05. Err on the side of do"
+            >
+              <dl>
+                <dt>05.</dt>
+                <dd>Err on the side of do</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/06/"
+              data-signal="06"
+              aria-label="Signal 06. Shape Up every six"
+            >
+              <dl>
+                <dt>06.</dt>
+                <dd>Shape Up every six</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/07/"
+              data-signal="07"
+              aria-label="Signal 07. We don’t sell you"
+            >
+              <dl>
+                <dt>07.</dt>
+                <dd>We don’t sell you</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/08/" data-signal="08" aria-label="Signal 08. 8/8/8">
+              <dl>
+                <dt>08.</dt>
+                <dd>8/8/8</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/09/" data-signal="09" aria-label="Signal 09. NOTASAP">
+              <dl>
+                <dt>09.</dt>
+                <dd>NOTASAP</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/10/"
+              data-signal="10"
+              aria-label="Signal 10. The Fortune 5,000,000"
+            >
+              <dl>
+                <dt>10.</dt>
+                <dd>The Fortune 5,000,000</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/11/"
+              data-signal="11"
+              aria-label="Signal 11. Don’t emulate the office"
+            >
+              <dl>
+                <dt>11.</dt>
+                <dd>Don’t emulate the office</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/12/"
+              data-signal="12"
+              aria-label="Signal 12. Hours aren’t equal"
+            >
+              <dl>
+                <dt>12.</dt>
+                <dd>Hours aren’t equal</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/13/" data-signal="13" aria-label="Signal 13. On repeat">
+              <dl>
+                <dt>13.</dt>
+                <dd>On repeat</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/14/"
+              data-signal="14"
+              aria-label="Signal 14. Meetings aren’t free"
+            >
+              <dl>
+                <dt>14.</dt>
+                <dd>Meetings aren’t free</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/15/"
+              data-signal="15"
+              aria-label="Signal 15. Bury the hustle"
+            >
+              <dl>
+                <dt>15.</dt>
+                <dd>Bury the hustle</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/16/"
+              data-signal="16"
+              aria-label="Signal 16. The trap of marginal thinking"
+            >
+              <dl>
+                <dt>16.</dt>
+                <dd>The trap of marginal thinking</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/17/" data-signal="17" aria-label="Signal 17. Politicking">
+              <dl>
+                <dt>17.</dt>
+                <dd>Politicking</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/18/"
+              data-signal="18"
+              aria-label="Signal 18. Two tokens of customer service"
+            >
+              <dl>
+                <dt>18.</dt>
+                <dd>Two tokens of customer service</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/19/"
+              data-signal="19"
+              aria-label="Signal 19. Pay people, not addresses"
+            >
+              <dl>
+                <dt>19.</dt>
+                <dd>Pay people, not addresses</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/20/" data-signal="20" aria-label="Signal 20. Small tech">
+              <dl>
+                <dt>20.</dt>
+                <dd>Small tech</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/21/" data-signal="21" aria-label="Signal 21. Know no">
+              <dl>
+                <dt>21.</dt>
+                <dd>Know no</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/22/" data-signal="22" aria-label="Signal 22. Stayups">
+              <dl>
+                <dt>22.</dt>
+                <dd>Stayups</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/23/"
+              data-signal="23"
+              aria-label="Signal 23. Thoughting vs. thinking"
+            >
+              <dl>
+                <dt>23.</dt>
+                <dd>Thoughting vs. thinking</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/24/" data-signal="24" aria-label="Signal 24. Fixed">
+              <dl>
+                <dt>24.</dt>
+                <dd>Fixed</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/25/"
+              data-signal="25"
+              aria-label="Signal 25. Disagree and commit"
+            >
+              <dl>
+                <dt>25.</dt>
+                <dd>Disagree and commit</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/26/"
+              data-signal="26"
+              aria-label="Signal 26. Kick in the face, kick in the ass"
+            >
+              <dl>
+                <dt>26.</dt>
+                <dd>Kick in the face, kick in the ass</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/27/"
+              data-signal="27"
+              aria-label="Signal 27. Broadly speaking"
+            >
+              <dl>
+                <dt>27.</dt>
+                <dd>Broadly speaking</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/28/"
+              data-signal="28"
+              aria-label="Signal 28. Shots on goals"
+            >
+              <dl>
+                <dt>28.</dt>
+                <dd>Shots on goals</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/29/"
+              data-signal="29"
+              aria-label="Signal 29. JOMO not FOMO"
+            >
+              <dl>
+                <dt>29.</dt>
+                <dd>JOMO not FOMO</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/30/"
+              data-signal="30"
+              aria-label="Signal 30. Miscommunication problems"
+            >
+              <dl>
+                <dt>30.</dt>
+                <dd>Miscommunication problems</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/31/" data-signal="31" aria-label="Signal 31. Easy?">
+              <dl>
+                <dt>31.</dt>
+                <dd>Easy?</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/32/"
+              data-signal="32"
+              aria-label="Signal 32. Ruby on Rails"
+            >
+              <dl>
+                <dt>32.</dt>
+                <dd>Ruby on Rails</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/33/"
+              data-signal="33"
+              aria-label="Signal 33. Planning is guessing"
+            >
+              <dl>
+                <dt>33.</dt>
+                <dd>Planning is guessing</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a href="/34/" data-signal="34" aria-label="Signal 34. Sleep on it">
+              <dl>
+                <dt>34.</dt>
+                <dd>Sleep on it</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/35/"
+              data-signal="35"
+              aria-label="Signal 35. Companies aren’t families"
+            >
+              <dl>
+                <dt>35.</dt>
+                <dd>Companies aren’t families</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/36/"
+              data-signal="36"
+              aria-label="Signal 36. Context &gt; consistency"
+            >
+              <dl>
+                <dt>36.</dt>
+                <dd>Context &gt; consistency</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+
+        <section class="signal signal--dim">
+          <header class="signal__header">
+            <a
+              href="/37/"
+              data-signal="37"
+              aria-label="Signal 37. What’s in a name?"
+            >
+              <dl>
+                <dt>37.</dt>
+                <dd>What’s in a name?</dd>
+              </dl>
+            </a>
+          </header>
+        </section>
+      </div>
+    </main>
+
+    <div class="boundary"></div>
+
+    <div
+      class="controller controller--origin"
+      data-next="https://37signals.com/01/"
+      data-previous="https://37signals.com/37"
+    >
+      <a
+        href="/01/"
+        aria-label="Next Signal: An obligation to independence"
+        tabindex="-1"
+      ></a>
+    </div>
+
+    <div class="origin"></div>
+
+    <footer class="footer">
+      <ul>
+        <li>
+          <a
+            href="https://1999.37signals.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="1999"
+            >1999</a
+          >
+        </li>
+
+        <li><a href="/books/" aria-label="Books">Books</a></li>
+
+        <li><a href="/thoughts/" aria-label="Thoughts">Thoughts</a></li>
+
+        <li><a href="/jobs/" aria-label="Jobs">Jobs</a></li>
+
+        <li>
+          <a
+            href="https://updates.37signals.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Updates"
+            >Updates</a
+          >
+        </li>
+
+        <li><a href="/podcast/" aria-label="Podcast">Podcast</a></li>
+
+        <li>
+          <a href="https://supply.37signals.com" aria-label="Supply">Supply</a>
+        </li>
+
+        <li><a href="https://dev.37signals.com" aria-label="Dev">Dev</a></li>
+
+        <li><a href="/policies/privacy/" aria-label="Privacy">Privacy</a></li>
+
+        <li><a href="/policies/terms/" aria-label="Terms">Terms</a></li>
+      </ul>
+
+      <div class="footer__next">
+        <a
+          href="/01/"
+          aria-label="Next Signal: An obligation to independence"
+          tabindex="-1"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
